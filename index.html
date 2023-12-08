@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Afghani Restaurant</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Afghani Delicious foods Restaurant!</h1>
+      <h2>Our Special Afghani Foods</h2>
+
+      <!-- adding list of Special Afghani Foods -->
+      <ul>
+        <li>Afghani kabab</li>
+        <li>Ghabeli Ozbakee</li>
+        <li>Ashak & Mato</li>
+        <li>Morq Sokhari</li>
+        <li>GhabeliPolo</li>
+      </ul>
+
+      <!-- adding imges -->
+      <img src="img/ghabeliPolo.jpg" alt="Burger" />
+      <img src="img/kabab.jpg" alt="Spaghetti" />
+      <img src="img/manto.jpg" alt="Salmon" />
+
+      <!-- External page navigation -->
+      <p>
+        Check out our full menu
+        <a href="fullMenu.html" target="_blank">here</a>!
+      </p>
+      <br />
+
+      <!-- reservation form -->
+      <h2>Make a Reservation</h2>
+      <form>
+        <label>Full Name:</label>
+        <input type="text" id="fullname" required />
+
+        <label>Email:</label>
+        <input type="email" id="email" required />
+        <br />
+        <br />
+        <label>Reservation Date:</label>
+        <input type="date" id="reservation-date" required />
+        <label>Reservation Time:</label>
+        <input type="time" id="reservation-time" required />
+        <br />
+        <br />
+        <div></div>
+        <label>Number of Guest:</label>
+        <select id="party-size" required>
+          <option value="1"></option>
+          <option value="2">1 person</option>
+          <option value="3">2 people</option>
+          <option value="4">3 people</option>
+          <option value="5">4 people</option>
+          <option value="6">5 people</option>
+        </select>
+        <input type="submit" value="submit" />
+      </form>
+      <br />
+      <br />
+
+      <!-- opening hours Table -->
+      <table border="1">
+        <caption>
+          <h3>Opening Hours</h3>
+        </caption>
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday - Friday</td>
+          <td>9 AM - 10 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>10 AM - 11 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
